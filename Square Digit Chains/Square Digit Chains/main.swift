@@ -33,7 +33,7 @@ outerLoop: for i in 1...567 {
     }
 }
 
-// 7 for loops that will create every combination of different numbers < 10,000,000
+// 7 for loops that will create every combination of different digits < 10,000,000
 for x7 in 0...9 {
     for x6 in x7...9 {
         for x5 in x6...9 {
@@ -66,7 +66,7 @@ for x7 in 0...9 {
         }
     }
 }
-permsThatReach89 = (10000000 - totalPermsEqual1 - 1)
+permsThatReach89 = (10000000 - totalPermsEqual1 - 1) // since we calculated for 1, take the complement
 print(totalLoops, totalCombsEqual1, totalPermsEqual1, permsThatReach89)
 
 
