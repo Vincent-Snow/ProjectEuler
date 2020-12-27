@@ -20,3 +20,13 @@ extension StringProtocol {
     subscript(range: PartialRangeThrough<Int>) -> SubSequence { self[...index(startIndex, offsetBy: range.upperBound)] }
     subscript(range: PartialRangeUpTo<Int>) -> SubSequence { self[..<index(startIndex, offsetBy: range.upperBound)] }
 }
+
+
+func factorial(a: Int) -> Int {
+    let n = a
+    if(n == 1){
+      return 1
+    }else{
+        return n*factorial(a:n-1)
+    }
+}
