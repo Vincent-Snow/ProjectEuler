@@ -11,6 +11,11 @@ var num = ["1","2","3","4","5","6","7","8","9","0"]
 var largeInts: [Int] = []
 var largeStr: [String] = []
 var doubles: [Double] = []
+func benchmark() {
+    let start = Date()
+    let elapsed = Date().timeIntervalSince(start)
+    print(String(format: "time: %.3f", elapsed))
+}
 //1x2x3x4x5x6x7x8x9x0
 //smallest possible: 1020304050607080900
 //largest possible: 1929394959697989900
@@ -21,52 +26,20 @@ var doubles: [Double] = []
 //yep 127334.0 16213947556
 //yep 135254.0 18293644516
 
-loooop: for i in 1010101009...1010101455
-where (i*i) % 100 == 0 &&
-    (String(i)[String(i).count-2] == "3" ||
-        String(i)[String(i).count-2] == "7") {
-    let s = String(i*i)
-    print(i, i*i)
-        if s[0] == "1" && s[2] == "2" && s[4] == "3" && s[6] == "4" && s[8] == "5" && s[10] == "6" && s[12] == "7" && s[14] == "8" && s[16] == "9" && s[18] == "0" {
-            print("yay", i)
-            break loooop
-        }
-}
-let longstr = (1020304059000000000.0,1020304050000000000.0)
-print(sqrt(longstr.0), sqrt(longstr.1))
- 
-
-//for iInt in 0...9 {
-//    let i = String(iInt)
-//    let str = num[0]+i+num[1]+i+num[2]+i+num[3]+i+num[4]+i+num[5]+i+num[6]+i+num[7]+i+num[8]+i+num[9]
-//    print(str, str.count)
-//    largeStr.append(str)
-//    largeInts.append(Int(str) ?? 0)
-//}
-//for i in 1389026603...1389026623 {
-//    print(i*i)
-//}
-func bruteForce2() {
-    for x1 in num {
-        for x2 in num {
-            for x3 in num {
-                for x4 in num {
-                    for x5 in num {
-                        for x6 in num {
-                            for x7 in num {
-                                let str = num[0]+x1+num[1]+x2+num[2]+x3+num[3]+x4+num[4]+x5+num[5]+x6+num[6]+x7+num[7]
-                                if sqrt(Double(str)!).truncatingRemainder(dividingBy: 1) == 0 {
-                                    print("yep", sqrt(Double(str)!),str)
-                                }
-                            }
-                        }
-                    }
-                }
+let start = Date()
+var stri = stride(from: 1010101010, to: 1389026623, by: 10)
+func looooop(stri: StrideTo<Int>) {
+    loooop: for i in stri {
+        let s = String(i*i)
+            if s[0] == "1" && s[2] == "2" && s[4] == "3" && s[6] == "4" && s[8] == "5" && s[10] == "6" && s[12] == "7" && s[14] == "8" && s[16] == "9" && s[18] == "0" {
+                print("yay", i)
+                break loooop
             }
-        }
     }
 }
-
+looooop(stri: stri)
+let elapsed = Date().timeIntervalSince(start)
+print(elapsed)
 
 func bruteForce() {
     for x1 in num {
@@ -93,7 +66,19 @@ func bruteForce() {
         }
     }
 }
-//bruteForce()
+
+
+//for iInt in 0...9 {
+//    let i = String(iInt)
+//    let str = num[0]+i+num[1]+i+num[2]+i+num[3]+i+num[4]+i+num[5]+i+num[6]+i+num[7]+i+num[8]+i+num[9]
+//    print(str, str.count)
+//    largeStr.append(str)
+//    largeInts.append(Int(str) ?? 0)
+//}
+//for i in 1389026603...1389026623 {
+//    print(i*i)
+//}
+
 //for i in largeInts {
 //    print(i, sqrt(Double(i)))
 //    doubles.append(sqrt(Double(i)))
@@ -117,11 +102,9 @@ var previous = 0
 //        largeStr[String(i*i)] = 1
 //}
 
-let arr1 = 1010101010...1389026623
 
 //for i in largeStr {
 //    if i[0] == "1" && i[2] == "2" && i[4] == "3" && i[6] == "4" && i[8] == "5" && i[10] == "6" && i[12] == "7" && i[14] == "8" && i[16] == "9" && i[18] == "0" {
 //        print("yay", i)
 //    }
 //}
-print("all done")
