@@ -7,15 +7,6 @@
 
 import Foundation
 
-var num = ["1","2","3","4","5","6","7","8","9","0"]
-var largeInts: [Int] = []
-var largeStr: [String] = []
-var doubles: [Double] = []
-func benchmark() {
-    let start = Date()
-    let elapsed = Date().timeIntervalSince(start)
-    print(String(format: "time: %.3f", elapsed))
-}
 //1x2x3x4x5x6x7x8x9x0
 //smallest possible: 1020304050607080900
 //largest possible: 1929394959697989900
@@ -26,15 +17,17 @@ func benchmark() {
 //yep 127334.0 16213947556
 //yep 135254.0 18293644516
 
+var num = ["1","2","3","4","5","6","7","8","9","0"]
 let start = Date()
-var stri = stride(from: 1010101010, to: 1389026623, by: 10)
+
+var stri = stride(from: 101010107, to: 138902662, by: 10)
 func looooop(stri: StrideTo<Int>) {
     loooop: for i in stri {
-        let s = String(i*i)
-            if s[0] == "1" && s[2] == "2" && s[4] == "3" && s[6] == "4" && s[8] == "5" && s[10] == "6" && s[12] == "7" && s[14] == "8" && s[16] == "9" && s[18] == "0" {
-                print("yay", i)
-                break loooop
-            }
+        let s = String(i*i*100)
+        if s[0] == "1" && s[2] == "2" && s[4] == "3" && s[6] == "4" && s[8] == "5" && s[10] == "6" && s[12] == "7" && s[14] == "8" && s[16] == "9" && s[18] == "0" {
+            print("yay", i)
+            break loooop
+        }
     }
 }
 looooop(stri: stri)
@@ -68,43 +61,3 @@ func bruteForce() {
 }
 
 
-//for iInt in 0...9 {
-//    let i = String(iInt)
-//    let str = num[0]+i+num[1]+i+num[2]+i+num[3]+i+num[4]+i+num[5]+i+num[6]+i+num[7]+i+num[8]+i+num[9]
-//    print(str, str.count)
-//    largeStr.append(str)
-//    largeInts.append(Int(str) ?? 0)
-//}
-//for i in 1389026603...1389026623 {
-//    print(i*i)
-//}
-
-//for i in largeInts {
-//    print(i, sqrt(Double(i)))
-//    doubles.append(sqrt(Double(i)))
-//}
-//print(doubles.max()! - doubles.min()!)
-// second to last digit has to be 0, 1, 4, 5, 6, 9
-var test = [10,20,30,40,50,60,70,80,90,100]
-var previous = 0
-//for i in 1010101010...1010101020 {
-//    let iSq = i*i
-//    print(iSq, previous, (iSq) - previous)
-//    previous = iSq
-//}
-//for i in 1389026603...1389026623 {
-//    let iSq = i*i
-//    print(iSq, previous, (iSq) - previous)
-//    previous = iSq
-//}
-
-//for i in 1010101010...1389026623 where i % 30 == 0 {
-//        largeStr[String(i*i)] = 1
-//}
-
-
-//for i in largeStr {
-//    if i[0] == "1" && i[2] == "2" && i[4] == "3" && i[6] == "4" && i[8] == "5" && i[10] == "6" && i[12] == "7" && i[14] == "8" && i[16] == "9" && i[18] == "0" {
-//        print("yay", i)
-//    }
-//}
