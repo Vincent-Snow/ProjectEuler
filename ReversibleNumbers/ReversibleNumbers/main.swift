@@ -8,7 +8,7 @@
 
 import Foundation
 var reversible: [Int] = []
-for i in 1...1000000 {
+for i in 1...10000 {
     var sumOdd = false
     let reverse = String(String(i).reversed())
     let intReverse = Int(reverse)!
