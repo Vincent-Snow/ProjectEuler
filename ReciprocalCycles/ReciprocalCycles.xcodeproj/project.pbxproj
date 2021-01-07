@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		887580BA25A575CA00E59757 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887580B925A575CA00E59757 /* main.swift */; };
-		887580C225A575D400E59757 /* PuzzleInpu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887580C125A575D400E59757 /* PuzzleInpu.swift */; };
+		887580FE25A6649200E59757 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887580FD25A6649200E59757 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		887580B425A575CA00E59757 /* CopyFiles */ = {
+		887580F825A6649200E59757 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		887580B625A575CA00E59757 /* Su Doku */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Su Doku"; sourceTree = BUILT_PRODUCTS_DIR; };
-		887580B925A575CA00E59757 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		887580C125A575D400E59757 /* PuzzleInpu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleInpu.swift; sourceTree = "<group>"; };
+		887580FA25A6649200E59757 /* ReciprocalCycles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReciprocalCycles; sourceTree = BUILT_PRODUCTS_DIR; };
+		887580FD25A6649200E59757 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		887580B325A575CA00E59757 /* Frameworks */ = {
+		887580F725A6649200E59757 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,66 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		887580AD25A575CA00E59757 = {
+		887580F125A6649200E59757 = {
 			isa = PBXGroup;
 			children = (
-				887580B825A575CA00E59757 /* Su Doku */,
-				887580B725A575CA00E59757 /* Products */,
+				887580FC25A6649200E59757 /* ReciprocalCycles */,
+				887580FB25A6649200E59757 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		887580B725A575CA00E59757 /* Products */ = {
+		887580FB25A6649200E59757 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				887580B625A575CA00E59757 /* Su Doku */,
+				887580FA25A6649200E59757 /* ReciprocalCycles */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		887580B825A575CA00E59757 /* Su Doku */ = {
+		887580FC25A6649200E59757 /* ReciprocalCycles */ = {
 			isa = PBXGroup;
 			children = (
-				887580B925A575CA00E59757 /* main.swift */,
-				887580C125A575D400E59757 /* PuzzleInpu.swift */,
+				887580FD25A6649200E59757 /* main.swift */,
 			);
-			path = "Su Doku";
+			path = ReciprocalCycles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		887580B525A575CA00E59757 /* Su Doku */ = {
+		887580F925A6649200E59757 /* ReciprocalCycles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 887580BD25A575CA00E59757 /* Build configuration list for PBXNativeTarget "Su Doku" */;
+			buildConfigurationList = 8875810125A6649200E59757 /* Build configuration list for PBXNativeTarget "ReciprocalCycles" */;
 			buildPhases = (
-				887580B225A575CA00E59757 /* Sources */,
-				887580B325A575CA00E59757 /* Frameworks */,
-				887580B425A575CA00E59757 /* CopyFiles */,
+				887580F625A6649200E59757 /* Sources */,
+				887580F725A6649200E59757 /* Frameworks */,
+				887580F825A6649200E59757 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Su Doku";
-			productName = "Su Doku";
-			productReference = 887580B625A575CA00E59757 /* Su Doku */;
+			name = ReciprocalCycles;
+			productName = ReciprocalCycles;
+			productReference = 887580FA25A6649200E59757 /* ReciprocalCycles */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		887580AE25A575CA00E59757 /* Project object */ = {
+		887580F225A6649200E59757 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					887580B525A575CA00E59757 = {
+					887580F925A6649200E59757 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = 887580B125A575CA00E59757 /* Build configuration list for PBXProject "Su Doku" */;
+			buildConfigurationList = 887580F525A6649200E59757 /* Build configuration list for PBXProject "ReciprocalCycles" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 887580AD25A575CA00E59757;
-			productRefGroup = 887580B725A575CA00E59757 /* Products */;
+			mainGroup = 887580F125A6649200E59757;
+			productRefGroup = 887580FB25A6649200E59757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				887580B525A575CA00E59757 /* Su Doku */,
+				887580F925A6649200E59757 /* ReciprocalCycles */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		887580B225A575CA00E59757 /* Sources */ = {
+		887580F625A6649200E59757 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				887580BA25A575CA00E59757 /* main.swift in Sources */,
-				887580C225A575D400E59757 /* PuzzleInpu.swift in Sources */,
+				887580FE25A6649200E59757 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		887580BB25A575CA00E59757 /* Debug */ = {
+		887580FF25A6649200E59757 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		887580BC25A575CA00E59757 /* Release */ = {
+		8875810025A6649200E59757 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +241,7 @@
 			};
 			name = Release;
 		};
-		887580BE25A575CA00E59757 /* Debug */ = {
+		8875810225A6649200E59757 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,7 +250,7 @@
 			};
 			name = Debug;
 		};
-		887580BF25A575CA00E59757 /* Release */ = {
+		8875810325A6649200E59757 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +262,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		887580B125A575CA00E59757 /* Build configuration list for PBXProject "Su Doku" */ = {
+		887580F525A6649200E59757 /* Build configuration list for PBXProject "ReciprocalCycles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				887580BB25A575CA00E59757 /* Debug */,
-				887580BC25A575CA00E59757 /* Release */,
+				887580FF25A6649200E59757 /* Debug */,
+				8875810025A6649200E59757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		887580BD25A575CA00E59757 /* Build configuration list for PBXNativeTarget "Su Doku" */ = {
+		8875810125A6649200E59757 /* Build configuration list for PBXNativeTarget "ReciprocalCycles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				887580BE25A575CA00E59757 /* Debug */,
-				887580BF25A575CA00E59757 /* Release */,
+				8875810225A6649200E59757 /* Debug */,
+				8875810325A6649200E59757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 887580AE25A575CA00E59757 /* Project object */;
+	rootObject = 887580F225A6649200E59757 /* Project object */;
 }
