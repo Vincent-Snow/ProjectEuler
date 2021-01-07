@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88031A9C25A7C78F000ABEA0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88031A9B25A7C78F000ABEA0 /* Helper.swift */; };
-		882F409025990072006D46D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F408F25990072006D46D3 /* main.swift */; };
+		88031A9425A7C735000ABEA0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88031A9325A7C735000ABEA0 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		882F408A25990072006D46D3 /* CopyFiles */ = {
+		88031A8E25A7C735000ABEA0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		88031A9B25A7C78F000ABEA0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		882F408C25990072006D46D3 /* Factorial Digit Sum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Factorial Digit Sum"; sourceTree = BUILT_PRODUCTS_DIR; };
-		882F408F25990072006D46D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		88031A9025A7C735000ABEA0 /* Digit Factorials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Digit Factorials"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88031A9325A7C735000ABEA0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		882F408925990072006D46D3 /* Frameworks */ = {
+		88031A8D25A7C735000ABEA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,66 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		882F408325990072006D46D3 = {
+		88031A8725A7C735000ABEA0 = {
 			isa = PBXGroup;
 			children = (
-				882F408E25990072006D46D3 /* Factorial Digit Sum */,
-				882F408D25990072006D46D3 /* Products */,
+				88031A9225A7C735000ABEA0 /* Digit Factorials */,
+				88031A9125A7C735000ABEA0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		882F408D25990072006D46D3 /* Products */ = {
+		88031A9125A7C735000ABEA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				882F408C25990072006D46D3 /* Factorial Digit Sum */,
+				88031A9025A7C735000ABEA0 /* Digit Factorials */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		882F408E25990072006D46D3 /* Factorial Digit Sum */ = {
+		88031A9225A7C735000ABEA0 /* Digit Factorials */ = {
 			isa = PBXGroup;
 			children = (
-				88031A9B25A7C78F000ABEA0 /* Helper.swift */,
-				882F408F25990072006D46D3 /* main.swift */,
+				88031A9325A7C735000ABEA0 /* main.swift */,
 			);
-			path = "Factorial Digit Sum";
+			path = "Digit Factorials";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		882F408B25990072006D46D3 /* Factorial Digit Sum */ = {
+		88031A8F25A7C735000ABEA0 /* Digit Factorials */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 882F409325990072006D46D3 /* Build configuration list for PBXNativeTarget "Factorial Digit Sum" */;
+			buildConfigurationList = 88031A9725A7C735000ABEA0 /* Build configuration list for PBXNativeTarget "Digit Factorials" */;
 			buildPhases = (
-				882F408825990072006D46D3 /* Sources */,
-				882F408925990072006D46D3 /* Frameworks */,
-				882F408A25990072006D46D3 /* CopyFiles */,
+				88031A8C25A7C735000ABEA0 /* Sources */,
+				88031A8D25A7C735000ABEA0 /* Frameworks */,
+				88031A8E25A7C735000ABEA0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Factorial Digit Sum";
-			productName = "Factorial Digit Sum";
-			productReference = 882F408C25990072006D46D3 /* Factorial Digit Sum */;
+			name = "Digit Factorials";
+			productName = "Digit Factorials";
+			productReference = 88031A9025A7C735000ABEA0 /* Digit Factorials */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		882F408425990072006D46D3 /* Project object */ = {
+		88031A8825A7C735000ABEA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					882F408B25990072006D46D3 = {
+					88031A8F25A7C735000ABEA0 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = 882F408725990072006D46D3 /* Build configuration list for PBXProject "Factorial Digit Sum" */;
+			buildConfigurationList = 88031A8B25A7C735000ABEA0 /* Build configuration list for PBXProject "Digit Factorials" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 882F408325990072006D46D3;
-			productRefGroup = 882F408D25990072006D46D3 /* Products */;
+			mainGroup = 88031A8725A7C735000ABEA0;
+			productRefGroup = 88031A9125A7C735000ABEA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				882F408B25990072006D46D3 /* Factorial Digit Sum */,
+				88031A8F25A7C735000ABEA0 /* Digit Factorials */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		882F408825990072006D46D3 /* Sources */ = {
+		88031A8C25A7C735000ABEA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882F409025990072006D46D3 /* main.swift in Sources */,
-				88031A9C25A7C78F000ABEA0 /* Helper.swift in Sources */,
+				88031A9425A7C735000ABEA0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		882F409125990072006D46D3 /* Debug */ = {
+		88031A9525A7C735000ABEA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		882F409225990072006D46D3 /* Release */ = {
+		88031A9625A7C735000ABEA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +241,7 @@
 			};
 			name = Release;
 		};
-		882F409425990072006D46D3 /* Debug */ = {
+		88031A9825A7C735000ABEA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,7 +250,7 @@
 			};
 			name = Debug;
 		};
-		882F409525990072006D46D3 /* Release */ = {
+		88031A9925A7C735000ABEA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +262,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		882F408725990072006D46D3 /* Build configuration list for PBXProject "Factorial Digit Sum" */ = {
+		88031A8B25A7C735000ABEA0 /* Build configuration list for PBXProject "Digit Factorials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				882F409125990072006D46D3 /* Debug */,
-				882F409225990072006D46D3 /* Release */,
+				88031A9525A7C735000ABEA0 /* Debug */,
+				88031A9625A7C735000ABEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		882F409325990072006D46D3 /* Build configuration list for PBXNativeTarget "Factorial Digit Sum" */ = {
+		88031A9725A7C735000ABEA0 /* Build configuration list for PBXNativeTarget "Digit Factorials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				882F409425990072006D46D3 /* Debug */,
-				882F409525990072006D46D3 /* Release */,
+				88031A9825A7C735000ABEA0 /* Debug */,
+				88031A9925A7C735000ABEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 882F408425990072006D46D3 /* Project object */;
+	rootObject = 88031A8825A7C735000ABEA0 /* Project object */;
 }
