@@ -25,7 +25,7 @@ func card(trip: (Double, Double, Double)) {
         }
     }
 }
-for i in 1...200 {
+for i in 1...1000000000 {
     for j in 1...200 {
         if (i + j) > 1000 {
             continue
