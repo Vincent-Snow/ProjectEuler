@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6BC0BA5D-DD85-4F09-B1DF-1A0FAA192114"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACD3A1F6-61D2-49A4-BE6A-0F9CA73FF861"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Product Sum Numbers/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1EDB85D1-EA5E-4269-9712-6703E3BF379B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Product Sum Numbers/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B8926BE-2889-42D6-8D6F-B6950DE8ABA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Product Sum Numbers/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "5B8926BE-2889-42D6-8D6F-B6950DE8ABA6 - 8498ce8a5d7b826"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Product Sum Numbers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vints/Documents/swift/Project%20Euler/ProjectEuler/Product%20Sum%20Numbers/Product%20Sum%20Numbers/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "1005">
+               </Location>
+               <Location
+                  uuid = "5B8926BE-2889-42D6-8D6F-B6950DE8ABA6 - 1df73ddb8f4883ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 (Swift.Int, Swift.Int) -&gt; Swift.Int in implicit closure #1 (Swift.Int.Type) -&gt; (Swift.Int, Swift.Int) -&gt; Swift.Int in Product_Sum_Numbers"
+                  moduleName = "Product Sum Numbers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vints/Documents/swift/Project%20Euler/ProjectEuler/Product%20Sum%20Numbers/Product%20Sum%20Numbers/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "308C6A3A-778F-4294-9F4C-F3D6AF45128A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Product Sum Numbers/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "308C6A3A-778F-4294-9F4C-F3D6AF45128A - 8498ce8a5d7b8e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Product Sum Numbers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vints/Documents/swift/Project%20Euler/ProjectEuler/Product%20Sum%20Numbers/Product%20Sum%20Numbers/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1336">
+               </Location>
+               <Location
+                  uuid = "308C6A3A-778F-4294-9F4C-F3D6AF45128A - 9c526b7eb31f7900"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 (Swift.Int, Swift.Int) -&gt; Swift.Int in implicit closure #3 (Swift.Int.Type) -&gt; (Swift.Int, Swift.Int) -&gt; Swift.Int in Product_Sum_Numbers"
+                  moduleName = "Product Sum Numbers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vints/Documents/swift/Project%20Euler/ProjectEuler/Product%20Sum%20Numbers/Product%20Sum%20Numbers/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
