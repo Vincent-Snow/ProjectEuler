@@ -37,11 +37,12 @@ func primeFactors(_ n: Int) -> Array<Int> {
 //var tothe(_ x:Int, _ y:Int)
 
 var sumNum: [Int: Int] = [:]
-outerloop: for i in 3...12 {
+outerloop: for i in 3...20 {
     let primFact = primeFactors(i)
     if primFact == [] {
         continue
     }
+    print(i, primFact)
     let sum = primFact.reduce(0, +)
     
     let prod = primFact.reduce(1, *)
@@ -55,9 +56,14 @@ outerloop: for i in 3...12 {
             continue outerloop
         }
     }
-//    print(i, primeFactors(i))
 }
 
-for i in sumNum {
+for i in sumNum.sorted(by: {
+    if $0.value != $1.value {
+        return $0.value < $1.value
+    } else {
+        return $0.key < $1.key
+    }})
+{
     print(i)
 }

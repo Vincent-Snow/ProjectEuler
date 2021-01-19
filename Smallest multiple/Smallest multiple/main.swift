@@ -8,6 +8,7 @@
 import Foundation
 
 //var x = 2520
+let start = Date()
 var primeArray = [2,3,5,7,11,13,17,19]
 var counter = 0
 var highest = 0
@@ -69,14 +70,15 @@ for i in primeFacts {
         }
     }
 }
-print(primeOccurences)
 
-//outerLoop: for i in 1...10000000 {
-//
-//    for j in 1...20 {
-//        if i % j != 0 {
-//            continue outerLoop
-//        }
-//    }
-//    print(i)
-//}
+
+outerLoop: for i in 1...10000000 {
+
+    for j in 1...20 {
+        if i % j != 0 {
+            continue outerLoop
+        }
+    }
+    print(i)
+}
+print(primeOccurences, Date().timeIntervalSince(start))
