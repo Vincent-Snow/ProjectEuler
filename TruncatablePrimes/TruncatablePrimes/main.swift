@@ -29,19 +29,21 @@ func sieveNotIncluding(_ max: Int) -> [Int] {
 
     return sieve.enumerated().compactMap { $1 == true ? $0 : nil }
 }
-let sieve = sieveNotIncluding(1000000)
 
+let sieve = sieveNotIncluding(1000000)
 var sum = 0
 var sieveHash: [Int:Int] = [:]
+
 for i in sieve {
     sieveHash[i] = 1
 }
 
 iLoop: for i in sieve {
+    
     var counter = 0
-//    var trunc = ""
     var stri = String(i)
     var stri2 = stri
+    
     for _ in 0..<stri.count {
         if sieveHash[Int(stri)!] == 1 {
             counter+=1
@@ -50,6 +52,7 @@ iLoop: for i in sieve {
             continue iLoop
         }
     }
+    
     for _ in 0..<stri2.count {
         if sieveHash[Int(stri2)!] == 1 {
             counter+=1
@@ -58,6 +61,7 @@ iLoop: for i in sieve {
             continue iLoop
         }
     }
+    
     if counter == String(i).count*2 && String(i).count != 1 {
         print(i)
         sum+=i
