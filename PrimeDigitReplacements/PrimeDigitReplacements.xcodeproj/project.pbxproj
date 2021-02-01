@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		887580FE25A6649200E59757 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887580FD25A6649200E59757 /* main.swift */; };
-		88BBAED925C0E8DD00D2CC5A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBAED825C0E8DD00D2CC5A /* Helper.swift */; };
+		88B1B16E25C89062008122B7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B16D25C89062008122B7 /* main.swift */; };
+		88B1B17625C89249008122B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B17525C89249008122B7 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		887580F825A6649200E59757 /* CopyFiles */ = {
+		88B1B16825C89062008122B7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +24,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		887580FA25A6649200E59757 /* ReciprocalCycles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReciprocalCycles; sourceTree = BUILT_PRODUCTS_DIR; };
-		887580FD25A6649200E59757 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		88BBAED825C0E8DD00D2CC5A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		88B1B16A25C89062008122B7 /* PrimeDigitReplacements */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimeDigitReplacements; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B1B16D25C89062008122B7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		88B1B17525C89249008122B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		887580F725A6649200E59757 /* Frameworks */ = {
+		88B1B16725C89062008122B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,66 +40,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		887580F125A6649200E59757 = {
+		88B1B16125C89062008122B7 = {
 			isa = PBXGroup;
 			children = (
-				887580FC25A6649200E59757 /* ReciprocalCycles */,
-				887580FB25A6649200E59757 /* Products */,
+				88B1B16C25C89062008122B7 /* PrimeDigitReplacements */,
+				88B1B16B25C89062008122B7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		887580FB25A6649200E59757 /* Products */ = {
+		88B1B16B25C89062008122B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				887580FA25A6649200E59757 /* ReciprocalCycles */,
+				88B1B16A25C89062008122B7 /* PrimeDigitReplacements */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		887580FC25A6649200E59757 /* ReciprocalCycles */ = {
+		88B1B16C25C89062008122B7 /* PrimeDigitReplacements */ = {
 			isa = PBXGroup;
 			children = (
-				887580FD25A6649200E59757 /* main.swift */,
-				88BBAED825C0E8DD00D2CC5A /* Helper.swift */,
+				88B1B16D25C89062008122B7 /* main.swift */,
+				88B1B17525C89249008122B7 /* Helper.swift */,
 			);
-			path = ReciprocalCycles;
+			path = PrimeDigitReplacements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		887580F925A6649200E59757 /* ReciprocalCycles */ = {
+		88B1B16925C89062008122B7 /* PrimeDigitReplacements */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8875810125A6649200E59757 /* Build configuration list for PBXNativeTarget "ReciprocalCycles" */;
+			buildConfigurationList = 88B1B17125C89062008122B7 /* Build configuration list for PBXNativeTarget "PrimeDigitReplacements" */;
 			buildPhases = (
-				887580F625A6649200E59757 /* Sources */,
-				887580F725A6649200E59757 /* Frameworks */,
-				887580F825A6649200E59757 /* CopyFiles */,
+				88B1B16625C89062008122B7 /* Sources */,
+				88B1B16725C89062008122B7 /* Frameworks */,
+				88B1B16825C89062008122B7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReciprocalCycles;
-			productName = ReciprocalCycles;
-			productReference = 887580FA25A6649200E59757 /* ReciprocalCycles */;
+			name = PrimeDigitReplacements;
+			productName = PrimeDigitReplacements;
+			productReference = 88B1B16A25C89062008122B7 /* PrimeDigitReplacements */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		887580F225A6649200E59757 /* Project object */ = {
+		88B1B16225C89062008122B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					887580F925A6649200E59757 = {
-						CreatedOnToolsVersion = 12.3;
+					88B1B16925C89062008122B7 = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 887580F525A6649200E59757 /* Build configuration list for PBXProject "ReciprocalCycles" */;
+			buildConfigurationList = 88B1B16525C89062008122B7 /* Build configuration list for PBXProject "PrimeDigitReplacements" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,30 +107,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 887580F125A6649200E59757;
-			productRefGroup = 887580FB25A6649200E59757 /* Products */;
+			mainGroup = 88B1B16125C89062008122B7;
+			productRefGroup = 88B1B16B25C89062008122B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				887580F925A6649200E59757 /* ReciprocalCycles */,
+				88B1B16925C89062008122B7 /* PrimeDigitReplacements */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		887580F625A6649200E59757 /* Sources */ = {
+		88B1B16625C89062008122B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				887580FE25A6649200E59757 /* main.swift in Sources */,
-				88BBAED925C0E8DD00D2CC5A /* Helper.swift in Sources */,
+				88B1B16E25C89062008122B7 /* main.swift in Sources */,
+				88B1B17625C89249008122B7 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		887580FF25A6649200E59757 /* Debug */ = {
+		88B1B16F25C89062008122B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +191,7 @@
 			};
 			name = Debug;
 		};
-		8875810025A6649200E59757 /* Release */ = {
+		88B1B17025C89062008122B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +245,7 @@
 			};
 			name = Release;
 		};
-		8875810225A6649200E59757 /* Debug */ = {
+		88B1B17225C89062008122B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,7 +254,7 @@
 			};
 			name = Debug;
 		};
-		8875810325A6649200E59757 /* Release */ = {
+		88B1B17325C89062008122B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +266,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		887580F525A6649200E59757 /* Build configuration list for PBXProject "ReciprocalCycles" */ = {
+		88B1B16525C89062008122B7 /* Build configuration list for PBXProject "PrimeDigitReplacements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				887580FF25A6649200E59757 /* Debug */,
-				8875810025A6649200E59757 /* Release */,
+				88B1B16F25C89062008122B7 /* Debug */,
+				88B1B17025C89062008122B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8875810125A6649200E59757 /* Build configuration list for PBXNativeTarget "ReciprocalCycles" */ = {
+		88B1B17125C89062008122B7 /* Build configuration list for PBXNativeTarget "PrimeDigitReplacements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8875810225A6649200E59757 /* Debug */,
-				8875810325A6649200E59757 /* Release */,
+				88B1B17225C89062008122B7 /* Debug */,
+				88B1B17325C89062008122B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 887580F225A6649200E59757 /* Project object */;
+	rootObject = 88B1B16225C89062008122B7 /* Project object */;
 }

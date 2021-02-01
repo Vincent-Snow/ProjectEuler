@@ -7,13 +7,15 @@
 import Foundation
 
 //var getsTo89: [Int] = []
-var neverGetsTo89: [Int] = []
+let start = Date()
+var neverGetsTo89: [Int:Bool] = [:]
+//var neverGetsTo89: [Int] = []
 var sum = 0
 var totalLoops = 0
 var totalCombsEqual1 = 0
 var totalPermsEqual1 = 0
 var permsThatReach89: Int
-let sevenFact = factorial(a:7)
+let sevenFact = factorial(7)
 
 // brute force below 567 ( 9^2 * 7 ) creates array of every number that will reach 1 eventually
 outerLoop: for i in 1...567 {
@@ -26,7 +28,8 @@ outerLoop: for i in 1...567 {
             sum+=(intI*intI)
         }
         if sum == 1 {
-            neverGetsTo89.append(i)
+//            neverGetsTo89.append(i)
+            neverGetsTo89[i] = true
             continue outerLoop
         }
         input = String(sum)
@@ -42,19 +45,20 @@ for x7 in 0...9 {
                     for x2 in x3...9 {
                         for x1 in x2...9 {
                             let number = [x7,x6,x5,x4,x3,x2,x1]
-                            print(number)
+                            //print(number)
                             totalLoops+=1
                             for i in number {
                                 sum+=(i*i)
                             }
                             
-                            if neverGetsTo89.contains(sum) {        // check if the sum of the digits squared are in our gets to 1 array
+//                            if neverGetsTo89.contains(sum) {        // check if the sum of the digits squared are in our gets to 1 array
+                            if neverGetsTo89[sum] == true {
                                 let mappedItems = number.map { ($0, 1) }
                                 let counts = Dictionary(mappedItems, uniquingKeysWith: +) // calculate the unique occurences of each digit in number
                                 totalCombsEqual1+=1
                                 var fact = 1
                                 for j in counts {   //
-                                    fact*=factorial(a:j.value)
+                                    fact*=factorial(j.value)
                                 }
                                 totalPermsEqual1+=(sevenFact/fact) // 7! / the factorial of the count of each unique digit (0011222 = 2!*2!*3!)
                             }
@@ -67,7 +71,7 @@ for x7 in 0...9 {
     }
 }
 permsThatReach89 = (10000000 - totalPermsEqual1 - 1) // since we calculated for 1, take the complement
-print(totalLoops, totalCombsEqual1, totalPermsEqual1, permsThatReach89)
+print(totalLoops, totalCombsEqual1, totalPermsEqual1, permsThatReach89, Date().timeIntervalSince(start))
 
 
 
