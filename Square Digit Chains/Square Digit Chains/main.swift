@@ -45,7 +45,7 @@ for x7 in 0...9 {
                     for x2 in x3...9 {
                         for x1 in x2...9 {
                             let number = [x7,x6,x5,x4,x3,x2,x1]
-                            //print(number)
+                            print(number)
                             totalLoops+=1
                             for i in number {
                                 sum+=(i*i)

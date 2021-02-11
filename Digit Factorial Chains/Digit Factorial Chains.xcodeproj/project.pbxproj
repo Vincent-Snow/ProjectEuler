@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88757FDF25A23F7100E59757 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88757FDE25A23F7100E59757 /* main.swift */; };
-		88757FE725A23FBC00E59757 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88757FE625A23FBC00E59757 /* Helper.swift */; };
+		88DB520D25D4571900391DF2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB520C25D4571900391DF2 /* main.swift */; };
+		88DB521525D458B200391DF2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB521425D458B200391DF2 /* Helper.swift */; };
+		88DB521925D4620700391DF2 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 88DB521825D4620700391DF2 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		88757FD925A23F7100E59757 /* CopyFiles */ = {
+		88DB520725D4571900391DF2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,82 +25,86 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		88757FDB25A23F7100E59757 /* ReversibleNumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReversibleNumbers; sourceTree = BUILT_PRODUCTS_DIR; };
-		88757FDE25A23F7100E59757 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		88757FE625A23FBC00E59757 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		88DB520925D4571900391DF2 /* Digit Factorial Chains */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Digit Factorial Chains"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DB520C25D4571900391DF2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		88DB521425D458B200391DF2 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88757FD825A23F7100E59757 /* Frameworks */ = {
+		88DB520625D4571900391DF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DB521925D4620700391DF2 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88757FD225A23F7100E59757 = {
+		88DB520025D4571900391DF2 = {
 			isa = PBXGroup;
 			children = (
-				88757FDD25A23F7100E59757 /* ReversibleNumbers */,
-				88757FDC25A23F7100E59757 /* Products */,
+				88DB520B25D4571900391DF2 /* Digit Factorial Chains */,
+				88DB520A25D4571900391DF2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88757FDC25A23F7100E59757 /* Products */ = {
+		88DB520A25D4571900391DF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88757FDB25A23F7100E59757 /* ReversibleNumbers */,
+				88DB520925D4571900391DF2 /* Digit Factorial Chains */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88757FDD25A23F7100E59757 /* ReversibleNumbers */ = {
+		88DB520B25D4571900391DF2 /* Digit Factorial Chains */ = {
 			isa = PBXGroup;
 			children = (
-				88757FDE25A23F7100E59757 /* main.swift */,
-				88757FE625A23FBC00E59757 /* Helper.swift */,
+				88DB520C25D4571900391DF2 /* main.swift */,
+				88DB521425D458B200391DF2 /* Helper.swift */,
 			);
-			path = ReversibleNumbers;
+			path = "Digit Factorial Chains";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88757FDA25A23F7100E59757 /* ReversibleNumbers */ = {
+		88DB520825D4571900391DF2 /* Digit Factorial Chains */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88757FE225A23F7100E59757 /* Build configuration list for PBXNativeTarget "ReversibleNumbers" */;
+			buildConfigurationList = 88DB521025D4571900391DF2 /* Build configuration list for PBXNativeTarget "Digit Factorial Chains" */;
 			buildPhases = (
-				88757FD725A23F7100E59757 /* Sources */,
-				88757FD825A23F7100E59757 /* Frameworks */,
-				88757FD925A23F7100E59757 /* CopyFiles */,
+				88DB520525D4571900391DF2 /* Sources */,
+				88DB520625D4571900391DF2 /* Frameworks */,
+				88DB520725D4571900391DF2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReversibleNumbers;
-			productName = ReversibleNumbers;
-			productReference = 88757FDB25A23F7100E59757 /* ReversibleNumbers */;
+			name = "Digit Factorial Chains";
+			packageProductDependencies = (
+				88DB521825D4620700391DF2 /* Algorithms */,
+			);
+			productName = "Digit Factorial Chains";
+			productReference = 88DB520925D4571900391DF2 /* Digit Factorial Chains */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88757FD325A23F7100E59757 /* Project object */ = {
+		88DB520125D4571900391DF2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					88757FDA25A23F7100E59757 = {
-						CreatedOnToolsVersion = 12.3;
+					88DB520825D4571900391DF2 = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 88757FD625A23F7100E59757 /* Build configuration list for PBXProject "ReversibleNumbers" */;
+			buildConfigurationList = 88DB520425D4571900391DF2 /* Build configuration list for PBXProject "Digit Factorial Chains" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,30 +112,33 @@
 				en,
 				Base,
 			);
-			mainGroup = 88757FD225A23F7100E59757;
-			productRefGroup = 88757FDC25A23F7100E59757 /* Products */;
+			mainGroup = 88DB520025D4571900391DF2;
+			packageReferences = (
+				88DB521725D4620700391DF2 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
+			productRefGroup = 88DB520A25D4571900391DF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88757FDA25A23F7100E59757 /* ReversibleNumbers */,
+				88DB520825D4571900391DF2 /* Digit Factorial Chains */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88757FD725A23F7100E59757 /* Sources */ = {
+		88DB520525D4571900391DF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88757FDF25A23F7100E59757 /* main.swift in Sources */,
-				88757FE725A23FBC00E59757 /* Helper.swift in Sources */,
+				88DB520D25D4571900391DF2 /* main.swift in Sources */,
+				88DB521525D458B200391DF2 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		88757FE025A23F7100E59757 /* Debug */ = {
+		88DB520E25D4571900391DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +199,7 @@
 			};
 			name = Debug;
 		};
-		88757FE125A23F7100E59757 /* Release */ = {
+		88DB520F25D4571900391DF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +253,7 @@
 			};
 			name = Release;
 		};
-		88757FE325A23F7100E59757 /* Debug */ = {
+		88DB521125D4571900391DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,7 +262,7 @@
 			};
 			name = Debug;
 		};
-		88757FE425A23F7100E59757 /* Release */ = {
+		88DB521225D4571900391DF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +274,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88757FD625A23F7100E59757 /* Build configuration list for PBXProject "ReversibleNumbers" */ = {
+		88DB520425D4571900391DF2 /* Build configuration list for PBXProject "Digit Factorial Chains" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88757FE025A23F7100E59757 /* Debug */,
-				88757FE125A23F7100E59757 /* Release */,
+				88DB520E25D4571900391DF2 /* Debug */,
+				88DB520F25D4571900391DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88757FE225A23F7100E59757 /* Build configuration list for PBXNativeTarget "ReversibleNumbers" */ = {
+		88DB521025D4571900391DF2 /* Build configuration list for PBXNativeTarget "Digit Factorial Chains" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88757FE325A23F7100E59757 /* Debug */,
-				88757FE425A23F7100E59757 /* Release */,
+				88DB521125D4571900391DF2 /* Debug */,
+				88DB521225D4571900391DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88DB521725D4620700391DF2 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88DB521825D4620700391DF2 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DB521725D4620700391DF2 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 88757FD325A23F7100E59757 /* Project object */;
+	rootObject = 88DB520125D4571900391DF2 /* Project object */;
 }
