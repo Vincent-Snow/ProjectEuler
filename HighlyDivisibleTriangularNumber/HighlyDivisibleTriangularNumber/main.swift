@@ -25,6 +25,7 @@ func primeFactors(_ n: Int) -> [Int] {
 
     return factors
 }
+
 func factors(_ n: Int) -> [Int] {
     precondition(n > 0, "n must be positive")
     let sqrtn = Int(Double(n).squareRoot())
