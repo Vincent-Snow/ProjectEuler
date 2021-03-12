@@ -23,4 +23,4 @@ let fifty = 50
 let pound = 100
 let twoPound = 200
 var ans = 0
-// There are 100 ways to make 2 pounds via 1 and 2 pence. 101 ways including two pound. 
+// There are 99 ways to make 2 pounds via 1 and 2 pence combined. 39 ways with 1 and 5 pence. 19 ways with 2 and 5 pence. 98 + 8 for each individual coin
