@@ -6,6 +6,10 @@
 //
 
 import Foundation
+let start = Date()
+func t() -> TimeInterval {
+    return Date().timeIntervalSince(start)
+}
 
 func eratosthenesSieve(to n: Int) -> [Int] {
     var composite = Array(repeating: false, count: n + 1) // The sieve
@@ -39,125 +43,48 @@ func eratosthenesSieve(to n: Int) -> [Int] {
     return primes
 }
 
-let sieve = eratosthenesSieve(to: 10000)
+let sieve = eratosthenesSieve(to: 1000000)
 var sieveDict: [Int: Bool] = [:]
 for i in sieve {
     sieveDict[i] = true
 }
-var previous = -1
-var counter = 0
 var highest = 0
-var a = 0
-var b = 0
+var bigA = 0
+var bigB = 0
 var highestProd = 0
-//while a < 1000 && b <= 1000 {
-//
-//    for n in 0...100 {
-//        let q = (n*n)+(a*n)+b
-//        if sieveDict[q] == true {
-//            //print(n, q)
-//            counter+=1
-//            if n-previous == 1 {
-//                previous = n
-//            } else {
-//                previous = 0
-//                counter = 0
-//            }
-//        }
-//        if counter > highest {
-//            highest = counter
-//            highestProd = a*b
-//            print(highest,highestProd,a,b)
-//        }
-//    }
-//    if b == 1000 {
-//        a+=1
-//        b=0
-//    } else {
-//        b+=1
-//    }
-//}
-a = -999; b = -1000
-while a < 1000 && b <= 1000 {
-    
-    for n in 0...1000 {
-        let q = (n*n)+(a*n)+b
-        if sieveDict[q] == true {
-            //print(n, q)
-            counter+=1
-            if n-previous == 1 {
-                previous = n
-            } else {
-                previous = 0
-                counter = 0
+
+bLoop: for b in sieve where b < 1000 {
+    aLoop: for a in 1...1000 {
+        nLoop: for n in 0...79 {
+            let prime = (n*n) - (a * n) + b
+            if (n*n) + b <= (a * n) {
+                continue bLoop
+            }
+            if sieveDict[prime] != true {
+                continue aLoop
+            }
+            if n > highest {
+                highest = n
+                highestProd = a * b
+                bigA = a
+                bigB = b
             }
         }
-        if counter > highest {
-            highest = counter
-            highestProd = a*b
-            print(highest,highestProd,n, (a,b))
+        nLoop: for n in 0...79 {
+            let prime = (n*n) + (a * n) + b
+            if sieveDict[prime] != true {
+                continue aLoop
+            }
+            
+            if n > highest {
+                highest = n
+                highestProd = a * b
+                bigA = a
+                bigB = b
+            }
         }
     }
-    if b == 1000 {
-        a+=1
-        b = -1000
-    } else {
-        b+=1
-    }
-//    print(a,b)
 }
-//a = 0; b = 0
-//while a < 1000 && b <= 1000 {
-//
-//    for n in 0...100 {
-//        let q = (n*n)-(a*n)+b
-//        if sieveDict[q] == true {
-//            //print(n, q)
-//            counter+=1
-//            if n-previous == 1 {
-//                previous = n
-//            } else {
-//                previous = 0
-//                counter = 0
-//            }
-//        }
-//        if counter > highest {
-//            highest = counter
-//            highestProd = a*b
-//        }
-//    }
-//    if b == 1000 {
-//        a+=1
-//        b=0
-//    } else {
-//        b+=1
-//    }
-//}
-//a = 0; b = 0
-//while a < 1000 && b <= 1000 {
-//
-//    for n in 0...100 {
-//        let q = (n*n)-(a*n)-b
-//        if sieveDict[q] == true {
-//            //print(n, q)
-//            counter+=1
-//            if n-previous == 1 {
-//                previous = n
-//            } else {
-//                previous = 0
-//                counter = 0
-//            }
-//        }
-//        if counter > highest {
-//            highest = counter
-//            highestProd = a*b
-//        }
-//    }
-//    if b == 1000 {
-//        a+=1
-//        b=0
-//    } else {
-//        b+=1
-//    }
-//}
-print(highest, highestProd)
+
+print(highest, highestProd, bigA, bigB)
+print(t())
