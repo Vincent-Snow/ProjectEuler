@@ -7,16 +7,52 @@
 
 import Foundation
 
-//for i in stride(from: 2.0, to: 1001.0, by: 1) {
-//    print(i, (1.0/i)*1000000000000000000000.0)
-//}
-for i in 1...1000 {
-    //let x = 10000000000000000000000000000000000000000000000000000000000000000.0
-    let x = 1.0
-    print(((1.0*x)/(Double(i))).toString())
+var num = 0
+var den = 1
+var div = 0
+var r = 0
+var ans:[Int] = []
+var divs:[Int] = []
+var longest = (0,0)
+
+func rec(_ den: Int) {
+    var den = den
+//    if ans.count > 25 {
+//        return
+//    }
+
+    while num > den {
+        den*=10
+        ans.append(0)
+    }
+    div = den/num
+    r = den % num
+    if divs.contains(r) {
+        let ind = divs.firstIndex(of: r)
+        let patLength = divs.count - ind!
+        if patLength > longest.1 {
+            longest = (num,patLength)
+        }
+        return
+    } else {
+        divs.append(r)
+    }
+    
+    ans.append(div)
+    if den % num == 0 {
+        return
+    } else {
+        den = den % num
+        den*=10
+        rec(den)
+    }
 }
-//var longest = 0
-//for i in 1...1000 {
-//    if String(1.0/Double(i)).count > longest &&
-//    print(String1.0/Double(i))
-//}
+
+for i in 1...1000 {
+    num = i
+    ans = []
+    divs = []
+    r = 0
+    rec(1)
+    print(i,ans,longest)
+}
