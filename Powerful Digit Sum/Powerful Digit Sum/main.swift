@@ -10,62 +10,91 @@
 
 import Foundation
 
-//let double = 100.0
-//let double2 = 100.0
-//print(String(format: "%f", pow(double, double2)))
-
-//for i in 2...99 {
-//    for j in 2...7 {
-//        let pow = pow(Double(i), Double(j))
-//
-//        var s = String(pow)
-//        s.removeLast()
-//        s.removeLast()
-//        var sum = 0
-//        for i in s {
-//            sum+=Int(String(i))!
-//        }
-//        print(i,j,pow,sum)
-//    }
-//}
-
-
-
-//let x = 2
-var max = 0
-for x in 3...3 {
+func singleLongMultiply(_ arr: [Int], x: Int) -> [Int] {
     var tempArr:[Int] = []
-    var arr:[Int] = [x]
-    for n in 2...99 {
-        let str = stride(from: arr.count-1, through: 0, by: -1)
-        var tens = 0
-        iLoop: for i in str {
-            
-            let p = x*arr[i]
+    let str = stride(from: arr.count-1, through: 0, by: -1)
+    var tens = 0
+    iLoop: for i in str {
+        
+        let p = (x*arr[i]) + tens
+        if p < 10 {
+            tempArr.insert(p, at: 0)
+            tens = 0
+        } else {
             let ones = p % 10 // 2
-            if p >= 10 && ones+tens < 10 {
- 
-                tempArr.insert(ones+tens, at: 0)
-                tens = p / 10 // 10
-                if i == 0 {
-                    tempArr.insert(tens, at: 0)
-                }
-            } else if p>=10 && ones+tens > 10 {
-                
-            } else {
-                tempArr.insert(p+tens, at: 0)
-                tens = 0
+            tens = p / 10
+            tempArr.insert(ones, at: 0)
+            if i == 0 {
+                tempArr.insert(tens, at: 0)
             }
         }
-        let current = tempArr.reduce(0, +)
-        //print(tempArr,"Sum:",current,"pow:",n, "num:", x)
-        print(tempArr)
-        if current > max {
-            max = current
-            print("Sum:",max,"pow:",n, "num:", x)
-        }
-        arr = tempArr
-        tempArr = []
     }
+    return tempArr
 }
 
+func addArr(_ arr1:[Int], _ arr2:[Int]) -> [Int] {
+    var sum: [Int] = []
+    var arr1 = arr1
+    var arr2 = arr2
+    while arr1.count > arr2.count {
+        arr2.insert(0, at: 0)
+    }
+    while arr1.count < arr2.count {
+        arr1.insert(0, at: 0)
+    }
+    let str = stride(from: arr1.count-1, through: 0, by: -1)
+    var s = 0
+    for i in str {
+        s = arr1[i] + arr2[i] + s
+        if s < 10 {
+            sum.insert(s, at: 0)
+            s = 0
+        } else {
+            let r = s % 10
+            sum.insert(r, at: 0)
+            s = s / 10
+            if i == 0 {
+                sum.insert(s, at: 0)
+            }
+        }
+    }
+    
+    return sum
+}
+
+func longMultiply(_ arr:[Int],_ x:[Int]) -> [Int] {
+    
+    var f: [Int] = []
+    iLoop: for i in 0...x.count-1 {
+        var prod = singleLongMultiply(arr, x: x[i])
+        if x.count-1 != i {
+            for _ in 1...x.count - 1 - i {
+                prod.append(0)
+            }
+        }
+        f = addArr(f, prod)
+    }
+    return f
+}
+
+//print(longMultiply([1,1,1], x: [9,9,9]))
+
+//print(longMultiply([9,9], [9,9]))
+
+var max: (Int,Int,Int,[Int]) = (0,0,0,[])
+for i in 1...99 {
+    var n = [i]
+    if i > 10 {
+        n = [i/10, i % 10]
+    }
+    var c = n
+    for pow in 2...99 {
+        c =  longMultiply(c, n)
+        print(c, pow, i)
+        let current = c.reduce(0, +)
+        if current > max.2 {
+            max = (i,pow,current,c)
+        }
+    }
+}
+print(max)
