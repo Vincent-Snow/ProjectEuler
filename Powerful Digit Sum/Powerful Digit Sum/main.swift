@@ -10,6 +10,11 @@
 
 import Foundation
 
+let start = Date()
+func t() -> TimeInterval {
+    return Date().timeIntervalSince(start)
+}
+
 func singleLongMultiply(_ arr: [Int], x: Int) -> [Int] {
     var tempArr:[Int] = []
     let str = stride(from: arr.count-1, through: 0, by: -1)
@@ -90,11 +95,11 @@ for i in 1...99 {
     var c = n
     for pow in 2...99 {
         c =  longMultiply(c, n)
-        print(c, pow, i)
+        //print(c, pow, i)
         let current = c.reduce(0, +)
         if current > max.2 {
             max = (i,pow,current,c)
         }
     }
 }
-print(max)
+print(max,t())
