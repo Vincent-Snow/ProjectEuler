@@ -9,33 +9,30 @@
  Find the smallest cube for which exactly five permutations of its digits are cube.*/
 
 import Foundation
-import Algorithms
 
+let start = Date()
+func t() -> TimeInterval {
+    return Date().timeIntervalSince(start)
+}
 var cubes: [Int] = []
-var cubeDict: [Int:Bool] = [:]
+var cubePerm: [[String]:[Int]] = [:]
 
-for i in 5...1000 {
+for i in 5...10000 {
     let cu = Int(pow(Double(i), 3.0))
     cubes.append(cu)
-    cubeDict[cu] = true
 }
-
-for i in cubes {
+iCube: for i in cubes {
     let str = String(i)
-    var pCubeArr: [Int] = [i]
-    for j in str.permutations(ofCount: str.count) {
-        let p = Int(String(j))!
-        
-        if p != i && i % 1000 != 0 && cubeDict[p] == true && !pCubeArr.contains(p) && (j[j.count-1] != "0" && j[j.count-2] != "0" && j[j.count-3] != "0"){
-            pCubeArr.append(p)
-            print(p,i)
-        }
-        if pCubeArr.count >= 3 {
-            print(pCubeArr)
-            
+    let strSort = str.sorted().map({String($0)})
+     if cubePerm[strSort] != nil {
+        cubePerm[strSort]!.append(i)
+    } else {
+        cubePerm[strSort] = [i]
+    }
+    if let count = cubePerm[strSort]?.count {
+        if count == 5 {
+            print(cubePerm[strSort]!, cubePerm[strSort]![0], t())
+            break iCube
         }
     }
 }
-//for i in cubes {
-//    print(i)
-//}
