@@ -13,6 +13,12 @@
  How many different ways can £2 be made using any number of coins?*/
 
 import Foundation
+import Algorithms
+
+let start = Date()
+func t() -> TimeInterval {
+    return Date().timeIntervalSince(start)
+}
 
 let one = 1
 let two = 2
@@ -21,6 +27,88 @@ let ten = 10
 let twenty = 20
 let fifty = 50
 let pound = 100
-let twoPound = 200
-var ans = 0
-// There are 99 ways to make 2 pounds via 1 and 2 pence combined. 39 ways with 1 and 5 pence. 19 ways with 2 and 5 pence. 98 + 8 for each individual coin
+let twoPound: Int  = 200
+var oneArr:[Int] = []
+var twoArr:[Int] = []
+var fiveArr:[Int] = []
+var tenArr:[Int] = []
+var twentyArr:[Int] = []
+var fiftyArr:[Int] = []
+var poundArr:[Int] = []
+var twoPoundArr:[Int] = []
+var up = 200
+
+func pop(up: Int, num: Int) -> [Int] {
+    var arr: [Int] = []
+    //let stri = stride(from: up/num, through: 0, by: -1)
+    let stri = stride(from: 0, through: up/num, by: 1)
+    for i in stri {
+        arr.append(i*num)
+    }
+    return arr
+}
+//func pop(up: Int, num: Int) -> [Int] {
+//    var arr: [Int] = []
+//    for i in 1...up/num {
+//        arr.append(num)
+//    }
+//    return arr
+//}
+oneArr = pop(up: up, num: one)
+twoArr = pop(up: up, num: two)
+fiveArr = pop(up: up, num: five)
+tenArr = pop(up: up, num: ten)
+twentyArr = pop(up: up, num: twenty)
+fiftyArr = pop(up: up, num: fifty)
+poundArr = pop(up: up, num: pound)
+twoPoundArr = pop(up: up, num: twoPound)
+
+var count = 0
+aLoop: for a in twoPoundArr {
+    bLoop: for b in poundArr {
+        if (a + b) > up {
+            continue aLoop
+        }
+        cLoop: for c in fiftyArr {
+
+            if (a + b + c) > up {
+                continue bLoop
+            }
+            dLoop: for d in twentyArr {
+                if (a + b + c + d) > up {
+                    continue cLoop
+                }
+                iLoop: for i in tenArr {
+
+                    if (a + b + c + d + i) > up {
+                        continue dLoop
+                    }
+                    jLoop: for j in fiveArr {
+                        if (a + b + c + d + i + j) > up {
+                            continue iLoop
+                        }
+                        kLoop: for k in twoArr {
+
+                            if (a + b + c + d + i + j + k) > up {
+                                continue jLoop
+                            }
+                            lLoop: for l in oneArr {
+                                if (a + b + c + d + i + j + k + l) > up {
+                                    continue kLoop
+                                }
+                                
+                                if (a + b + c + d + i + j + k + l) == up {
+                                    print("200: ",a,"100:   ",b,"50:    ",c,"20:  ", d,"10:  ", i, "5:   ", j, "2:   ", k, "1:   ", l)
+                                    count+=1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+print(count,t())
+
+

@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88642D9A2779434C007FCE69 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 88642D992779434C007FCE69 /* Algorithms */; };
-		88AA2B8825F88A640005A880 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA2B8725F88A640005A880 /* main.swift */; };
+		88AE027227759066008C4CAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE027127759066008C4CAE /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		88AA2B8225F88A640005A880 /* CopyFiles */ = {
+		88AE026C27759066008C4CAE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,84 +23,80 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		88AA2B8425F88A640005A880 /* CoinSums */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoinSums; sourceTree = BUILT_PRODUCTS_DIR; };
-		88AA2B8725F88A640005A880 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		88AE026E27759066008C4CAE /* CountingFractions72 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CountingFractions72; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AE027127759066008C4CAE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88AA2B8125F88A640005A880 /* Frameworks */ = {
+		88AE026B27759066008C4CAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88642D9A2779434C007FCE69 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88AA2B7B25F88A640005A880 = {
+		88AE026527759066008C4CAE = {
 			isa = PBXGroup;
 			children = (
-				88AA2B8625F88A640005A880 /* CoinSums */,
-				88AA2B8525F88A640005A880 /* Products */,
+				88AE027027759066008C4CAE /* CountingFractions72 */,
+				88AE026F27759066008C4CAE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88AA2B8525F88A640005A880 /* Products */ = {
+		88AE026F27759066008C4CAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88AA2B8425F88A640005A880 /* CoinSums */,
+				88AE026E27759066008C4CAE /* CountingFractions72 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88AA2B8625F88A640005A880 /* CoinSums */ = {
+		88AE027027759066008C4CAE /* CountingFractions72 */ = {
 			isa = PBXGroup;
 			children = (
-				88AA2B8725F88A640005A880 /* main.swift */,
+				88AE027127759066008C4CAE /* main.swift */,
 			);
-			path = CoinSums;
+			path = CountingFractions72;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88AA2B8325F88A640005A880 /* CoinSums */ = {
+		88AE026D27759066008C4CAE /* CountingFractions72 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88AA2B8B25F88A640005A880 /* Build configuration list for PBXNativeTarget "CoinSums" */;
+			buildConfigurationList = 88AE027527759066008C4CAE /* Build configuration list for PBXNativeTarget "CountingFractions72" */;
 			buildPhases = (
-				88AA2B8025F88A640005A880 /* Sources */,
-				88AA2B8125F88A640005A880 /* Frameworks */,
-				88AA2B8225F88A640005A880 /* CopyFiles */,
+				88AE026A27759066008C4CAE /* Sources */,
+				88AE026B27759066008C4CAE /* Frameworks */,
+				88AE026C27759066008C4CAE /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CoinSums;
-			packageProductDependencies = (
-				88642D992779434C007FCE69 /* Algorithms */,
-			);
-			productName = CoinSums;
-			productReference = 88AA2B8425F88A640005A880 /* CoinSums */;
+			name = CountingFractions72;
+			productName = CountingFractions72;
+			productReference = 88AE026E27759066008C4CAE /* CountingFractions72 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88AA2B7C25F88A640005A880 /* Project object */ = {
+		88AE026627759066008C4CAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					88AA2B8325F88A640005A880 = {
-						CreatedOnToolsVersion = 12.4;
+					88AE026D27759066008C4CAE = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 88AA2B7F25F88A640005A880 /* Build configuration list for PBXProject "CoinSums" */;
+			buildConfigurationList = 88AE026927759066008C4CAE /* Build configuration list for PBXProject "CountingFractions72" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,32 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 88AA2B7B25F88A640005A880;
-			packageReferences = (
-				88642D982779434C007FCE69 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
-			);
-			productRefGroup = 88AA2B8525F88A640005A880 /* Products */;
+			mainGroup = 88AE026527759066008C4CAE;
+			productRefGroup = 88AE026F27759066008C4CAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88AA2B8325F88A640005A880 /* CoinSums */,
+				88AE026D27759066008C4CAE /* CountingFractions72 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88AA2B8025F88A640005A880 /* Sources */ = {
+		88AE026A27759066008C4CAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88AA2B8825F88A640005A880 /* main.swift in Sources */,
+				88AE027227759066008C4CAE /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		88AA2B8925F88A640005A880 /* Debug */ = {
+		88AE027327759066008C4CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -195,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		88AA2B8A25F88A640005A880 /* Release */ = {
+		88AE027427759066008C4CAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -249,7 +241,7 @@
 			};
 			name = Release;
 		};
-		88AA2B8C25F88A640005A880 /* Debug */ = {
+		88AE027627759066008C4CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -258,7 +250,7 @@
 			};
 			name = Debug;
 		};
-		88AA2B8D25F88A640005A880 /* Release */ = {
+		88AE027727759066008C4CAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -270,44 +262,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88AA2B7F25F88A640005A880 /* Build configuration list for PBXProject "CoinSums" */ = {
+		88AE026927759066008C4CAE /* Build configuration list for PBXProject "CountingFractions72" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88AA2B8925F88A640005A880 /* Debug */,
-				88AA2B8A25F88A640005A880 /* Release */,
+				88AE027327759066008C4CAE /* Debug */,
+				88AE027427759066008C4CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88AA2B8B25F88A640005A880 /* Build configuration list for PBXNativeTarget "CoinSums" */ = {
+		88AE027527759066008C4CAE /* Build configuration list for PBXNativeTarget "CountingFractions72" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88AA2B8C25F88A640005A880 /* Debug */,
-				88AA2B8D25F88A640005A880 /* Release */,
+				88AE027627759066008C4CAE /* Debug */,
+				88AE027727759066008C4CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		88642D982779434C007FCE69 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		88642D992779434C007FCE69 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 88642D982779434C007FCE69 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 88AA2B7C25F88A640005A880 /* Project object */;
+	rootObject = 88AE026627759066008C4CAE /* Project object */;
 }
