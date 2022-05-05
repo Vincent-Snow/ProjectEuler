@@ -70,7 +70,6 @@ aLoop: for a in twoPoundArr {
             continue aLoop
         }
         cLoop: for c in fiftyArr {
-
             if (a + b + c) > up {
                 continue bLoop
             }
@@ -79,7 +78,6 @@ aLoop: for a in twoPoundArr {
                     continue cLoop
                 }
                 iLoop: for i in tenArr {
-
                     if (a + b + c + d + i) > up {
                         continue dLoop
                     }
@@ -88,7 +86,6 @@ aLoop: for a in twoPoundArr {
                             continue iLoop
                         }
                         kLoop: for k in twoArr {
-
                             if (a + b + c + d + i + j + k) > up {
                                 continue jLoop
                             }
