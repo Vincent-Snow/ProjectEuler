@@ -10,74 +10,52 @@ let start = Date()
 func t() -> TimeInterval {
     return Date().timeIntervalSince(start)
 }
-func lawOfCosines(_ a: Double, _ b: Double,_ c:Double) -> Double {
-    let gamma = acos(((a*a) + (b*b) - (c*c)) / (2*a*b))
-    return gamma
-}
-func heron(_ a: Double, _ b: Double,_ c:Double) -> Double {
-    let s = 0.5 * (a + b + c)
-    let root = s * (s-a) * (s-b) * (s-c)
-    let A = sqrt(root)
-    return A
-}
-func oblique(_ a: Double, _ b:Double, _ c:Double) -> Double {
-    let gamma = lawOfCosines(a, b, c)
-    let A = 0.5 * a * b * sin(gamma)
-    return A
-}
-func isInteger(_ dbl:Double) -> Bool {
-    let isInteger = floor(dbl) == dbl
-    return isInteger
+func gcdRecursiveEuklid(_ m: Int, _ n: Int) -> Int {
+    let r: Int = m % n
+    if r != 0 {
+        return gcdRecursiveEuklid(n, r)
+    } else {
+        return n
+    }
 }
 
-var sum = 0.0
-//let stri = stride(from: 2.0, to: 100, by: 1.0)
-let stri = stride(from: 3.0, to: 10000000, by: 2.0)
-//let gamma = lawOfCosines(5.0, 5.0, 6.0)
-//let A = 0.5 * 5.0 * 5.0 * sin(gamma)
-//
-//print(A, gamma * (180.0 / .pi), sin(gamma))
-for i in stri {
-        let plus = oblique(i, i, i+1.0)
-        let minus = oblique(i, i, i-1.0)
-        if isInteger(minus) {
-            print(minus, i, i-1,"\n")
-            sum+=(i+i+i-1.0)
+let u = 20000
+var sum = 0
+var m = 1
+mLoop: while m < u {
+    var counter = 0
+    let stri = stride(from: m+1, to: u+1, by: 2)
+    for n in stri {
+        if m*m > 100000000 {
+            break mLoop
         }
-        if isInteger(plus) {
-            print(plus,i,i+1,"\n")
-            sum+=(i+i+i+1.0)
+        if gcdRecursiveEuklid(m, n) == 1 {
+            let a = n*n-m*m
+            let b = 2*m*n
+            let c = m*m+n*n
+            if 2*a == c+1 {
+                counter+=1
+                sum+=c+c+a+a
+                print(a,b,c)
+            } else if 2*a == c-1 {
+                counter+=1
+                sum+=c+c+a+a
+                print(a,b,c)
+            } else if 2*b == c+1 {
+                counter+=1
+                sum+=c+c+b+b
+                print(a,b,c)
+            } else if 2*b == c-1 {
+                counter+=1
+                sum+=c+c+b+b
+                print(a,b,c)
+            }
+            if counter == 2 {
+                m = n
+                continue mLoop
+            }
         }
+    }
+    break
 }
-
-//for i in stri {
-//    let alpha = lawOfCosines(i, i, )
-//}
-//for i in stri {
-//
-//    let plus = heron(i, i, i+1.0)
-//    let minus = heron(i, i, i-1.0)
-//    var s = 0.0
-//    var root = 0.0
-//    if isInteger(minus) {
-//
-//        s = 0.5 * (i+i+(i-1.0))
-//        print("s: ", s)
-//        root = s * (s-i) * (s-i) * (s-(i-1.0))
-//        print("root: ",root)
-//        print(minus, i, i-1,"\n")
-//
-//    }
-//    if isInteger(plus) {
-//
-//        s = 0.5 * (i+i+i+1.0)
-//        print("s: ", s)
-//        root = s * (s-i) * (s-i) * (s-(i+1.0))
-//        print("root: ",root)
-//        print(plus,i,i+1,"\n")
-//    }
-//
-//}
 print(t(), sum)
-
-
