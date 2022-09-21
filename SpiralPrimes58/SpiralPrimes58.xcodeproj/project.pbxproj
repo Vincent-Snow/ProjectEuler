@@ -3,17 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		881C624228DB811300212BA3 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 881C624128DB811300212BA3 /* Algorithms */; };
-		88B1B16E25C89062008122B7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B16D25C89062008122B7 /* main.swift */; };
-		88B1B17625C89249008122B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B17525C89249008122B7 /* Helper.swift */; };
+		88AFFA6328B2A97800C52C40 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFFA6228B2A97800C52C40 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		88B1B16825C89062008122B7 /* CopyFiles */ = {
+		88AFFA5D28B2A97800C52C40 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,127 +23,117 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		88B1B16A25C89062008122B7 /* PrimeDigitReplacements */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimeDigitReplacements; sourceTree = BUILT_PRODUCTS_DIR; };
-		88B1B16D25C89062008122B7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		88B1B17525C89249008122B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		88AFFA5F28B2A97800C52C40 /* SpiralPrimes58 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpiralPrimes58; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AFFA6228B2A97800C52C40 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88B1B16725C89062008122B7 /* Frameworks */ = {
+		88AFFA5C28B2A97800C52C40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881C624228DB811300212BA3 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88B1B16125C89062008122B7 = {
+		88AFFA5628B2A97800C52C40 = {
 			isa = PBXGroup;
 			children = (
-				88B1B16C25C89062008122B7 /* PrimeDigitReplacements */,
-				88B1B16B25C89062008122B7 /* Products */,
+				88AFFA6128B2A97800C52C40 /* SpiralPrimes58 */,
+				88AFFA6028B2A97800C52C40 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88B1B16B25C89062008122B7 /* Products */ = {
+		88AFFA6028B2A97800C52C40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88B1B16A25C89062008122B7 /* PrimeDigitReplacements */,
+				88AFFA5F28B2A97800C52C40 /* SpiralPrimes58 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88B1B16C25C89062008122B7 /* PrimeDigitReplacements */ = {
+		88AFFA6128B2A97800C52C40 /* SpiralPrimes58 */ = {
 			isa = PBXGroup;
 			children = (
-				88B1B16D25C89062008122B7 /* main.swift */,
-				88B1B17525C89249008122B7 /* Helper.swift */,
+				88AFFA6228B2A97800C52C40 /* main.swift */,
 			);
-			path = PrimeDigitReplacements;
+			path = SpiralPrimes58;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88B1B16925C89062008122B7 /* PrimeDigitReplacements */ = {
+		88AFFA5E28B2A97800C52C40 /* SpiralPrimes58 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88B1B17125C89062008122B7 /* Build configuration list for PBXNativeTarget "PrimeDigitReplacements" */;
+			buildConfigurationList = 88AFFA6628B2A97800C52C40 /* Build configuration list for PBXNativeTarget "SpiralPrimes58" */;
 			buildPhases = (
-				88B1B16625C89062008122B7 /* Sources */,
-				88B1B16725C89062008122B7 /* Frameworks */,
-				88B1B16825C89062008122B7 /* CopyFiles */,
+				88AFFA5B28B2A97800C52C40 /* Sources */,
+				88AFFA5C28B2A97800C52C40 /* Frameworks */,
+				88AFFA5D28B2A97800C52C40 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PrimeDigitReplacements;
-			packageProductDependencies = (
-				881C624128DB811300212BA3 /* Algorithms */,
-			);
-			productName = PrimeDigitReplacements;
-			productReference = 88B1B16A25C89062008122B7 /* PrimeDigitReplacements */;
+			name = SpiralPrimes58;
+			productName = SpiralPrimes58;
+			productReference = 88AFFA5F28B2A97800C52C40 /* SpiralPrimes58 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88B1B16225C89062008122B7 /* Project object */ = {
+		88AFFA5728B2A97800C52C40 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					88B1B16925C89062008122B7 = {
-						CreatedOnToolsVersion = 12.4;
+					88AFFA5E28B2A97800C52C40 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 88B1B16525C89062008122B7 /* Build configuration list for PBXProject "PrimeDigitReplacements" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 88AFFA5A28B2A97800C52C40 /* Build configuration list for PBXProject "SpiralPrimes58" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 88B1B16125C89062008122B7;
-			packageReferences = (
-				881C624028DB811300212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
-			);
-			productRefGroup = 88B1B16B25C89062008122B7 /* Products */;
+			mainGroup = 88AFFA5628B2A97800C52C40;
+			productRefGroup = 88AFFA6028B2A97800C52C40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88B1B16925C89062008122B7 /* PrimeDigitReplacements */,
+				88AFFA5E28B2A97800C52C40 /* SpiralPrimes58 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88B1B16625C89062008122B7 /* Sources */ = {
+		88AFFA5B28B2A97800C52C40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B1B16E25C89062008122B7 /* main.swift in Sources */,
-				88B1B17625C89249008122B7 /* Helper.swift in Sources */,
+				88AFFA6328B2A97800C52C40 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		88B1B16F25C89062008122B7 /* Debug */ = {
+		88AFFA6428B2A97800C52C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -189,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -199,14 +187,13 @@
 			};
 			name = Debug;
 		};
-		88B1B17025C89062008122B7 /* Release */ = {
+		88AFFA6528B2A97800C52C40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -244,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -253,7 +240,7 @@
 			};
 			name = Release;
 		};
-		88B1B17225C89062008122B7 /* Debug */ = {
+		88AFFA6728B2A97800C52C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -262,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		88B1B17325C89062008122B7 /* Release */ = {
+		88AFFA6828B2A97800C52C40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -274,44 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88B1B16525C89062008122B7 /* Build configuration list for PBXProject "PrimeDigitReplacements" */ = {
+		88AFFA5A28B2A97800C52C40 /* Build configuration list for PBXProject "SpiralPrimes58" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88B1B16F25C89062008122B7 /* Debug */,
-				88B1B17025C89062008122B7 /* Release */,
+				88AFFA6428B2A97800C52C40 /* Debug */,
+				88AFFA6528B2A97800C52C40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88B1B17125C89062008122B7 /* Build configuration list for PBXNativeTarget "PrimeDigitReplacements" */ = {
+		88AFFA6628B2A97800C52C40 /* Build configuration list for PBXNativeTarget "SpiralPrimes58" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88B1B17225C89062008122B7 /* Debug */,
-				88B1B17325C89062008122B7 /* Release */,
+				88AFFA6728B2A97800C52C40 /* Debug */,
+				88AFFA6828B2A97800C52C40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		881C624028DB811300212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		881C624128DB811300212BA3 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 881C624028DB811300212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 88B1B16225C89062008122B7 /* Project object */;
+	rootObject = 88AFFA5728B2A97800C52C40 /* Project object */;
 }
