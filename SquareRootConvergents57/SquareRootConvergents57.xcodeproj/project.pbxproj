@@ -3,17 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		881C624228DB811300212BA3 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 881C624128DB811300212BA3 /* Algorithms */; };
-		88B1B16E25C89062008122B7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B16D25C89062008122B7 /* main.swift */; };
-		88B1B17625C89249008122B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B17525C89249008122B7 /* Helper.swift */; };
+		881C625028DCA7FF00212BA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C624F28DCA7FF00212BA3 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		88B1B16825C89062008122B7 /* CopyFiles */ = {
+		881C624A28DCA7FF00212BA3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,127 +23,117 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		88B1B16A25C89062008122B7 /* PrimeDigitReplacements */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimeDigitReplacements; sourceTree = BUILT_PRODUCTS_DIR; };
-		88B1B16D25C89062008122B7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		88B1B17525C89249008122B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		881C624C28DCA7FF00212BA3 /* SquareRootConvergents57 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SquareRootConvergents57; sourceTree = BUILT_PRODUCTS_DIR; };
+		881C624F28DCA7FF00212BA3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88B1B16725C89062008122B7 /* Frameworks */ = {
+		881C624928DCA7FF00212BA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881C624228DB811300212BA3 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88B1B16125C89062008122B7 = {
+		881C624328DCA7FF00212BA3 = {
 			isa = PBXGroup;
 			children = (
-				88B1B16C25C89062008122B7 /* PrimeDigitReplacements */,
-				88B1B16B25C89062008122B7 /* Products */,
+				881C624E28DCA7FF00212BA3 /* SquareRootConvergents57 */,
+				881C624D28DCA7FF00212BA3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88B1B16B25C89062008122B7 /* Products */ = {
+		881C624D28DCA7FF00212BA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88B1B16A25C89062008122B7 /* PrimeDigitReplacements */,
+				881C624C28DCA7FF00212BA3 /* SquareRootConvergents57 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88B1B16C25C89062008122B7 /* PrimeDigitReplacements */ = {
+		881C624E28DCA7FF00212BA3 /* SquareRootConvergents57 */ = {
 			isa = PBXGroup;
 			children = (
-				88B1B16D25C89062008122B7 /* main.swift */,
-				88B1B17525C89249008122B7 /* Helper.swift */,
+				881C624F28DCA7FF00212BA3 /* main.swift */,
 			);
-			path = PrimeDigitReplacements;
+			path = SquareRootConvergents57;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88B1B16925C89062008122B7 /* PrimeDigitReplacements */ = {
+		881C624B28DCA7FF00212BA3 /* SquareRootConvergents57 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88B1B17125C89062008122B7 /* Build configuration list for PBXNativeTarget "PrimeDigitReplacements" */;
+			buildConfigurationList = 881C625328DCA7FF00212BA3 /* Build configuration list for PBXNativeTarget "SquareRootConvergents57" */;
 			buildPhases = (
-				88B1B16625C89062008122B7 /* Sources */,
-				88B1B16725C89062008122B7 /* Frameworks */,
-				88B1B16825C89062008122B7 /* CopyFiles */,
+				881C624828DCA7FF00212BA3 /* Sources */,
+				881C624928DCA7FF00212BA3 /* Frameworks */,
+				881C624A28DCA7FF00212BA3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PrimeDigitReplacements;
-			packageProductDependencies = (
-				881C624128DB811300212BA3 /* Algorithms */,
-			);
-			productName = PrimeDigitReplacements;
-			productReference = 88B1B16A25C89062008122B7 /* PrimeDigitReplacements */;
+			name = SquareRootConvergents57;
+			productName = SquareRootConvergents57;
+			productReference = 881C624C28DCA7FF00212BA3 /* SquareRootConvergents57 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88B1B16225C89062008122B7 /* Project object */ = {
+		881C624428DCA7FF00212BA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					88B1B16925C89062008122B7 = {
-						CreatedOnToolsVersion = 12.4;
+					881C624B28DCA7FF00212BA3 = {
+						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = 88B1B16525C89062008122B7 /* Build configuration list for PBXProject "PrimeDigitReplacements" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 881C624728DCA7FF00212BA3 /* Build configuration list for PBXProject "SquareRootConvergents57" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 88B1B16125C89062008122B7;
-			packageReferences = (
-				881C624028DB811300212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
-			);
-			productRefGroup = 88B1B16B25C89062008122B7 /* Products */;
+			mainGroup = 881C624328DCA7FF00212BA3;
+			productRefGroup = 881C624D28DCA7FF00212BA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88B1B16925C89062008122B7 /* PrimeDigitReplacements */,
+				881C624B28DCA7FF00212BA3 /* SquareRootConvergents57 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88B1B16625C89062008122B7 /* Sources */ = {
+		881C624828DCA7FF00212BA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B1B16E25C89062008122B7 /* main.swift in Sources */,
-				88B1B17625C89249008122B7 /* Helper.swift in Sources */,
+				881C625028DCA7FF00212BA3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		88B1B16F25C89062008122B7 /* Debug */ = {
+		881C625128DCA7FF00212BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -172,7 +160,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -190,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -200,14 +187,13 @@
 			};
 			name = Debug;
 		};
-		88B1B17025C89062008122B7 /* Release */ = {
+		881C625228DCA7FF00212BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -234,7 +220,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -246,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -255,23 +240,19 @@
 			};
 			name = Release;
 		};
-		88B1B17225C89062008122B7 /* Debug */ = {
+		881C625428DCA7FF00212BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		88B1B17325C89062008122B7 /* Release */ = {
+		881C625528DCA7FF00212BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -280,44 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88B1B16525C89062008122B7 /* Build configuration list for PBXProject "PrimeDigitReplacements" */ = {
+		881C624728DCA7FF00212BA3 /* Build configuration list for PBXProject "SquareRootConvergents57" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88B1B16F25C89062008122B7 /* Debug */,
-				88B1B17025C89062008122B7 /* Release */,
+				881C625128DCA7FF00212BA3 /* Debug */,
+				881C625228DCA7FF00212BA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88B1B17125C89062008122B7 /* Build configuration list for PBXNativeTarget "PrimeDigitReplacements" */ = {
+		881C625328DCA7FF00212BA3 /* Build configuration list for PBXNativeTarget "SquareRootConvergents57" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88B1B17225C89062008122B7 /* Debug */,
-				88B1B17325C89062008122B7 /* Release */,
+				881C625428DCA7FF00212BA3 /* Debug */,
+				881C625528DCA7FF00212BA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		881C624028DB811300212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		881C624128DB811300212BA3 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 881C624028DB811300212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 88B1B16225C89062008122B7 /* Project object */;
+	rootObject = 881C624428DCA7FF00212BA3 /* Project object */;
 }
