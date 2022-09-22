@@ -21,6 +21,7 @@ var sieveDict: [Int:Bool] = [:]
 var digMissing: [String:[Int]] = [:]
 var prover: [String:Bool] = [:]
 
+
 for i in sieve {
     sieveDict[i] = true
 }

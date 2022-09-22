@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88AE027A27759803008C4CAE /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 88AE027927759803008C4CAE /* Algorithms */; };
+		881C625828DCAF8C00212BA3 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 881C625728DCAF8C00212BA3 /* Algorithms */; };
 		88DB519A25CC9A1300391DF2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB519925CC9A1300391DF2 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88AE027A27759803008C4CAE /* Algorithms in Frameworks */,
+				881C625828DCAF8C00212BA3 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			);
 			name = PrimePairSets;
 			packageProductDependencies = (
-				88AE027927759803008C4CAE /* Algorithms */,
+				881C625728DCAF8C00212BA3 /* Algorithms */,
 			);
 			productName = PrimePairSets;
 			productReference = 88DB519625CC9A1300391DF2 /* PrimePairSets */;
@@ -111,7 +111,7 @@
 			);
 			mainGroup = 88DB518D25CC9A1300391DF2;
 			packageReferences = (
-				88AE027827759803008C4CAE /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				881C625628DCAF8C00212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 88DB519725CC9A1300391DF2 /* Products */;
 			projectDirPath = "";
@@ -291,7 +291,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		88AE027827759803008C4CAE /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+		881C625628DCAF8C00212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
 			requirement = {
@@ -302,9 +302,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		88AE027927759803008C4CAE /* Algorithms */ = {
+		881C625728DCAF8C00212BA3 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 88AE027827759803008C4CAE /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			package = 881C625628DCAF8C00212BA3 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
