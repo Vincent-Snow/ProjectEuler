@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		886EAACA28DE6CB7000A917E /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 886EAAC928DE6CB7000A917E /* Algorithms */; };
 		88AE027227759066008C4CAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE027127759066008C4CAE /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886EAACA28DE6CB7000A917E /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = CountingFractions72;
+			packageProductDependencies = (
+				886EAAC928DE6CB7000A917E /* Algorithms */,
+			);
 			productName = CountingFractions72;
 			productReference = 88AE026E27759066008C4CAE /* CountingFractions72 */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +110,9 @@
 				Base,
 			);
 			mainGroup = 88AE026527759066008C4CAE;
+			packageReferences = (
+				886EAAC828DE6CB7000A917E /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 88AE026F27759066008C4CAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,6 +289,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		886EAAC828DE6CB7000A917E /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		886EAAC928DE6CB7000A917E /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 886EAAC828DE6CB7000A917E /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88AE026627759066008C4CAE /* Project object */;
 }

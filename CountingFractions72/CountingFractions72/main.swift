@@ -14,6 +14,8 @@
 //
 //How many elements would be contained in the set of reduced proper fractions for d ≤ 1,000,000?
 import Foundation
+import Algorithms
+
 let start = Date()
 func t() -> TimeInterval {
     return Date().timeIntervalSince(start)
@@ -49,46 +51,6 @@ func eratosthenesSieve(to n: Int) -> [Int] {
     }
     return primes
 }
-func pF(_ n: Int) -> Set<Int> {
-    var n = n
-    var factors: [Int] = []
-    
-    var divisor = 2
-    while divisor * divisor <= n {
-        while n % divisor == 0 {
-            factors.append(divisor)
-            n /= divisor
-        }
-        divisor += divisor == 2 ? 1 : 2
-    }
-    if n > 1 {
-        factors.append(n)
-    }
-    
-    return Set(factors)
-}
-func pFact(_ n: Int) -> Set<Int> {
-    var n = n
-    var factors: Set<Int> = []
-    
-    
-iLoop: for i in sieve {
-        if sieveDict[n] == true {
-            factors.insert(n)
-            break iLoop
-        }
-        while n % i == 0 {
-            n /= i
-            factors.insert(i)
-        }
-        if n == 1 {
-            break iLoop
-        }
-
-    }
-    
-    return factors
-}
 func reduceFraction(_ x: Int,_ y: Int) -> (Int, Int){
     var d = 0;
     d = gcd(x, y);
@@ -100,7 +62,7 @@ func gcd(_ a: Int,_ b: Int) -> Int {
     }
     return gcd(b, a % b);
 }
-let u = 100
+let u = 1000000
 var c = 0
 var count = 0
 var sieveDict: [Int:Bool] = [:]
@@ -109,29 +71,6 @@ let sieve = eratosthenesSieve(to: u)
 for i in sieve {
     sieveDict[i] = true
 }
-
-iLoop: for i in 2...u {
-    if sieveDict[i] == true {
-        c+=i-1
-        continue iLoop
-    }
-    var tmp = 0
-    jLoop: for j in 1..<i {
-        if (j,i) == reduceFraction(j, i) {
-            print(j,i)
-            tmp+=1
-        }
-    }
-    print("\(i): ", tmp)
-    c+=tmp
-}
-print(c,t())
-//var sum = 0
-//for i in 2...u {
-//    sum+=i-1
-//}
-//print(sum)
-var boolArr: [[Bool]] = [[],[]]
 
 for i in 2...u {
     let arr = sieveDict[i] == true ? [i] : []
@@ -146,89 +85,52 @@ mstri: for multiple in stri {
             primeFactors[multiple] = (multiple-1, [prime])
             continue mstri
         }
-//        if primeFactors[multiple] != nil {
-            var ar = primeFactors[multiple]!.1
-            let curr = primeFactors[multiple]!.0
-            ar.append(prime)
-            primeFactors[multiple] = (curr - (multiple/prime - 1), ar)
-//        } else {
-//            primeFactors[multiple] = (multiple - (multiple/prime - 1), [prime])
-//        }
+        var ar = primeFactors[multiple]!.1
+        let curr = primeFactors[multiple]!.0
+        ar.append(prime)
+        primeFactors[multiple] = (curr - (multiple/prime - 1), ar)
     }
 }
-for i in primeFactors.sorted(by: {$0.key < $1.key}) {
-    print(i.key,i.value)
+
+iLoop: for i in primeFactors {
+    let fact = i.value.1
+    var adjust = 0
+    if fact.count >= 2 {
+        for j in 2...fact.count {
+            for comb in fact.combinations(ofCount: j) {
+                let reduct = comb.reduce(1,*)
+                let prod = i.key / reduct - 1
+                if comb.count % 2 == 0 {
+                    adjust+=prod
+                } else {
+                    adjust-=prod
+                }
+            }
+        }
+    }
+    var tmpVal = i.value
+    tmpVal.0 += adjust
+    primeFactors[i.key] = tmpVal
+}
+for i in primeFactors {
+//    print(i.key,i.value)
     count+=i.value.0
 }
 print(count,t())
-//for i in sieve where i <= u/2 {
-//    for j in 2...u {
-//        if j % i == 0 {
-//            let subtrahend = ((j/i)-1)
-//            let x = sum
-//            sum-=subtrahend
-//        }
-//    }
-//}
-//print(sum, t())
-
-//
-//for i in boolArr {
-//    print(i)
-//}
-
-//for i in 1...23 {
-//    if (i,24) == reduceFraction(i, 24) {
-//        print(i,24)
-//    }
-//}
-//for i in 2...13 {
-//    count+=i-1
-//
-//
-//}
-//print(count)
 
 //iLoop: for i in 2...u {
 //    if sieveDict[i] == true {
 //        c+=i-1
 //        continue iLoop
 //    }
-//    for prime in sieve where prime < i/2 {
-//        var siv = Array(repeating: true, count: i + 1)
-//        siv[0] = false
-//        if i % prime == 0 {
-//            for n in stride(from: prime, through: i, by: prime) {
-//                siv[n] = false
-//            }
-//            let filt = siv.filter{$0}.count
-//            c+=filt
+//    var tmp = 0
+//    jLoop: for j in 1..<i {
+//        if (j,i) == reduceFraction(j, i) {
+//            //print(j,i)
+//            tmp+=1
 //        }
 //    }
+//    print("\(i): ", tmp)
+//    c+=tmp
 //}
-////print(c,t())
-//
-//iLoop: for i in 2...u {
-//    if sieveDict[i] == true {
-//        count+=i-1
-//        continue iLoop
-//    }
-////    if i == 128 {
-////
-////    }
-////    let arr = pFact(i, sieve)
-//    let arr = pFact(i)
-//    var siv = Array(repeating: true, count: i + 1)
-//    siv[0] = false
-//
-////    for fact in arr {
-////        for j in stride(from: fact, through: i, by: fact) {
-////            siv[j] = false
-////        }
-////    }
-////    print(siv)
-//    let filt = siv.filter{$0}.count
-////    print(filt)
-//    count+=filt
-//}
-//print(count,t())
+//print(c,t())
