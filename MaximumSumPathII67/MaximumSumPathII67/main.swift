@@ -12,7 +12,9 @@ let testInput = """
 7 4
 2 4 6
 8 5 9 3
-2 4 7 9 4
+6 0 8 3 9
+9 0 0 7 9 9
+9 0 0 0 0 3 9
 """
 
 
@@ -33,7 +35,7 @@ let testInput2 = """
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 """
-let format = testInput2.split(separator: "\n")
+let format = testInput.split(separator: "\n")
 var path: [[Int]] = []
 for i in format {
     let split = i.split(separator: " ")
@@ -60,7 +62,7 @@ var asdf = 1
 var highest = 0
 
 let stri = stride(from: finalArr.count-1, through: 0, by: -1)
-while incArr != finalArr {
+incLoop: while incArr != finalArr {
     var count = 0
     xLoop: for x in stri {
         if x != 0 {
@@ -75,6 +77,7 @@ while incArr != finalArr {
             }
             
             if incArr[x-1] == incArr[x-2] { // first two same, last two different
+                
                 for i in x-1..<finalArr.count {
                     incArr[i] = incArr[x]
                 }
@@ -82,19 +85,49 @@ while incArr != finalArr {
             }
         }
     }
+    
     var arr: [Int] = []
+    print(incArr)
+    asdf+=1
     for simulInd in 0..<path.count {
+        let maxLeft = (path.count-1-simulInd)*(9)
         let pathInd = incArr[simulInd]
         let pathIncArr = path[simulInd]
         count+=pathIncArr[pathInd]
+
+
         arr.append(pathIncArr[pathInd])
+        if maxLeft+count < highest {
+            if incArr[simulInd] == finalArr[simulInd] {
+                break incLoop
+            }
+            if incArr[simulInd-1] == incArr[simulInd] {
+                incArr[simulInd]+=1
+                continue incLoop
+            }
+            let stri2 = stride(from: simulInd, through: 1, by: -1)
+            stri2Loop: for i in stri2 {
+
+                if incArr[i-1] != incArr[i]-1 {
+                    for j in i-1..<finalArr.count {
+                        incArr[j] = incArr[i]
+                    }
+                    break stri2Loop
+                }
+            }
+            continue incLoop
+        }
     }
+
     if count > highest {
         highest = count
-        print("highest: ", highest, arr)
+        //print("highest: ", highest, arr)
     }
-    //print(incArr)
-    asdf+=1
+
+
+    
+    
+
 }
 print(asdf)
 
@@ -125,3 +158,10 @@ print(asdf)
 //    }
 //    print(incArr)
 //}
+
+//    for simulInd in 0..<path.count {
+//        let pathInd = incArr[simulInd]
+//        let pathIncArr = path[simulInd]
+//        count+=pathIncArr[pathInd]
+//        arr.append(pathIncArr[pathInd])
+//    }

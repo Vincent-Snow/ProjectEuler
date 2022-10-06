@@ -41,32 +41,25 @@ func eratosthenesSieve(to n: Int) -> [Int] {
     }
     return primes
 }
-let u = 500000
+let u = 200000
 let sieve = eratosthenesSieve(to: u)
 var sieveDict: [Int: Bool] = [:]
 for i in sieve {
     sieveDict[i] = true
 }
-print(sieve.count)
-let stri = stride(from: 3, through: u, by: 2)
-func primeTest(_ n: Int,_ sieve: [Int]) -> (Int, Int) {
-    for i in sieve where i < n/2 {
-        
-        if n.isMultiple(of: i) {
-            return (n, i)
+
+func compositeTest(_ n: Int) -> Bool {
+    for i in sieve where i < Int(sqrt(Double(n))) {
+        if n % i == 0 {
+            return true
         }
     }
-    return (n,1)
+    return false
 }
-//for i in stri {
-//    let sq = i*i
-//    let min = i-1
-//    let s3 = sq - (3 * min)
-//    print(primeTest(s3, sieve))
-//}
 
 var c = 0
 var iter = 0
+let stri = stride(from: 3, through: u, by: 2)
 
 for i in stri {
     let sq = i*i
@@ -74,31 +67,24 @@ for i in stri {
     let s = sq - min
     let s2 = sq - (2 * min)
     let s3 = sq - (3 * min)
-    let str = String(i)
-    print(i, s3, s2, s, sq, "\n")
-    if sieveDict[s3] == true {
-        //|| (s3 > u && primeTest(s3, sieve)) {
-        c+=1
-    }
 
-    if sieveDict[s2] == true {
-        //|| (str.last! != "3" && str.last! != "9" && s2 > u && primeTest(s2, sieve)) {
+    if sieveDict[s3] == true || !compositeTest(s3) {
         c+=1
     }
-    if sieveDict[s] == true {
-        //|| (s > u && primeTest(s, sieve)) {
+    if sieveDict[s2] == true || !compositeTest(s2){
+        c+=1
+    }
+    if sieveDict[s] == true || !compositeTest(s) {
        c+=1
     }
+    
     iter+=1
     let per = Double(c)/Double((iter*4)+1)
-//    if sieveDict[i] == true {
-//        print("\n", i, s3, s2, s, sq, "\n")
-//    }
 
-    //print("primes: ", c,"    total: ", (iter*4)+1, "    %:", round(per * 10000)/10000)
-     //   print(i, s3, s2, s, sq, "\n")
-    print(s)
+    print("primes: ", c,"    total: ", (iter*4)+1, "    %:", round(per * 10000)/10000)
+    print(i, s3, s2, s, sq, "\n")
     if per < 0.1 {
+        print("the end")
         print(i,c,(iter*4)+1, per, t())
         break
     }
