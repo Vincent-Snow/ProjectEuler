@@ -81,8 +81,8 @@ for i in stri {
     iter+=1
     let per = Double(c)/Double((iter*4)+1)
 
-    print("primes: ", c,"    total: ", (iter*4)+1, "    %:", round(per * 10000)/10000)
-    print(i, s3, s2, s, sq, "\n")
+//    print("primes: ", c,"    total: ", (iter*4)+1, "    %:", round(per * 10000)/10000)
+//    print(i, s3, s2, s, sq, "\n")
     if per < 0.1 {
         print("the end")
         print(i,c,(iter*4)+1, per, t())
