@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "0EB9686B-A43A-4C95-B096-708AAF5C9D08"
+   uuid = "E46BBCD8-3EC5-42A9-8441-E9D98E3D68BA"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E563272A-CE25-4D69-BC1B-088078E75721"
+            uuid = "1EEEE338-D04F-4A3D-993B-381360D1728D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MaximumSumPathII67/main.swift"
+            filePath = "AmicableChains95/main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "check(_:_:)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4E88E58C-EA14-4CCA-94B9-F82DCF02BC18"
-            shouldBeEnabled = "No"
+            uuid = "E824C05E-FDA7-4BD5-8B94-53B39AFDD0F8"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MaximumSumPathII67/main.swift"
+            filePath = "AmicableChains95/main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "all_paths(_:_:)"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "check(_:_:)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

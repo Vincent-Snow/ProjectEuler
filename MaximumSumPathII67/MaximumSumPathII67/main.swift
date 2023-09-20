@@ -12,9 +12,6 @@ let testInput = """
 7 4
 2 4 6
 8 5 9 3
-6 0 8 3 9
-9 0 0 7 9 9
-9 0 0 0 0 3 9
 """
 
 
@@ -35,7 +32,7 @@ let testInput2 = """
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 """
-let format = testInput.split(separator: "\n")
+let format = testInput2.split(separator: "\n")
 var path: [[Int]] = []
 for i in format {
     let split = i.split(separator: " ")
@@ -45,10 +42,59 @@ for i in format {
     }
     path.append(temp)
 }
-print(path)
+let a = [[1,2]]
+let b = [[3,4,6]]
 
 
-
+func all_paths(_ r: Int, _ c: Int) -> [[Int]] {
+    let current = path[r][c]
+    if r < path.count - 1 {
+        let below_paths = all_paths(r+1, c) + all_paths(r+1, c+1)
+        var ps: [[Int]] = []
+        for route in below_paths {
+            ps.append([current] + route)
+        }
+        return ps
+    } else {
+        return [[current]]
+    }
+}
+let all = all_paths(0, 0)
+print(all.count)
+for i in all {
+    print(i)
+}
+var sum = 0
+var avg = 0
+for i in path {
+    avg+=i.count
+    for j in i {
+        sum+=j
+    }
+}
+print(sum,avg,sum/avg)
+//print(path)
+var p:Int
+var inc = 0
+var s = 10000
+var initial: [Int]
+while s > 4000 {
+    s=0
+    p=0
+    initial=[]
+    for _ in 1...path.count {
+        initial.append(p)
+        let r = Int(arc4random_uniform(2))
+        p+=r
+    }
+    
+    for ind in 0..<initial.count {
+        s+=path[ind][initial[ind]]
+    }
+    //print(s)
+    inc+=1
+}
+print(inc,s)
 var finalArr: [Int] = []
 var incArr: [Int] = []
 for i in path {
@@ -57,9 +103,26 @@ for i in path {
 for _ in 1...path.count {
     incArr.append(0)
 }
-
 var asdf = 1
 var highest = 0
+
+incLoop: while incArr != finalArr {
+    let average = highest/incArr.count
+    var sub = 0
+    
+    
+    
+    
+    for ind in 0..<incArr.count {
+        sub+=path[ind][incArr[ind]]
+    }
+    if sub > highest {
+        highest = sub
+        print(highest)
+    }
+}
+
+
 
 let stri = stride(from: finalArr.count-1, through: 0, by: -1)
 incLoop: while incArr != finalArr {
@@ -165,3 +228,16 @@ print(asdf)
 //        count+=pathIncArr[pathInd]
 //        arr.append(pathIncArr[pathInd])
 //    }
+//func all_paths(_ r: Int, _ c: Int) -> [[Int]] {
+//    let current = path[r][c]
+//    if r < path.count - 1 {
+//        let below_paths = all_paths(r+1, c) + all_paths(r+1, c+1)
+//        var ps: [[Int]] = []
+//        for route in below_paths {
+//            ps.append([current] + route)
+//        }
+//        return ps
+//    } else {
+//        return [[current]]
+//    }
+//}
